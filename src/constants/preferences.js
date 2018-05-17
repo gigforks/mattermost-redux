@@ -61,7 +61,7 @@ export default {
             centerChannelColor: '#3d3c40',
             newMessageSeparator: '#ff8800',
             linkColor: '#2389d7',
-            buttonBg: '#dcdcda',
+            buttonBg: '#699ee3',
             buttonColor: '#ffffff',
             errorTextColor: '#fd5960',
             mentionHighlightBg: '#ffe577',
