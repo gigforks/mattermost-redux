@@ -86,7 +86,7 @@ describe('Actions.Admin', () => {
             get('/config').
             reply(200, {
                 TeamSettings: {
-                    SiteName: 'Mattermost',
+                    SiteName: 'ZeroChat',
                 },
             });
 
@@ -101,7 +101,7 @@ describe('Actions.Admin', () => {
         const config = state.entities.admin.config;
         assert.ok(config);
         assert.ok(config.TeamSettings);
-        assert.ok(config.TeamSettings.SiteName === 'Mattermost');
+        assert.ok(config.TeamSettings.SiteName === 'ZeroChat');
     });
 
     it('updateConfig', async () => {
@@ -109,7 +109,7 @@ describe('Actions.Admin', () => {
             get('/config').
             reply(200, {
                 TeamSettings: {
-                    SiteName: 'Mattermost',
+                    SiteName: 'ZeroChat',
                 },
             });
 
