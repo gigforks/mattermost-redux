@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2018-present ZeroChat, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 const path = require('path');
 const UglifyPlugin = require('uglifyjs-webpack-plugin');
@@ -11,8 +11,8 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'lib'),
-        library: ['Mattermost', '[name]'],
-        filename: 'mattermost.[name].js',
+        library: ['ZeroChat', '[name]'],
+        filename: 'zerochat.[name].js',
     },
     module: {
         rules: [
