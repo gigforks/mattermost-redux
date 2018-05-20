@@ -1,4 +1,4 @@
-// Copyright (c) 2018-present ZeroChat, Inc. All Rights Reserved.
+// Copyright (c) 2018-present TF Chat, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import fs from 'fs';
@@ -86,7 +86,7 @@ describe('Actions.Admin', () => {
             get('/config').
             reply(200, {
                 TeamSettings: {
-                    SiteName: 'ZeroChat',
+                    SiteName: 'TF Chat',
                 },
             });
 
@@ -101,7 +101,7 @@ describe('Actions.Admin', () => {
         const config = state.entities.admin.config;
         assert.ok(config);
         assert.ok(config.TeamSettings);
-        assert.ok(config.TeamSettings.SiteName === 'ZeroChat');
+        assert.ok(config.TeamSettings.SiteName === 'TF Chat');
     });
 
     it('updateConfig', async () => {
@@ -109,7 +109,7 @@ describe('Actions.Admin', () => {
             get('/config').
             reply(200, {
                 TeamSettings: {
-                    SiteName: 'ZeroChat',
+                    SiteName: 'TF Chat',
                 },
             });
 

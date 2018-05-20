@@ -1,4 +1,4 @@
-// Copyright (c) 2018-present ZeroChat, Inc. All Rights Reserved.
+// Copyright (c) 2018-present TF Chat, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import fs from 'fs';
@@ -1589,7 +1589,7 @@ describe('Actions.Posts', () => {
 
         nock(Client4.getBaseRoute()).
             post('/opengraph').
-            reply(200, {type: 'article', url: 'https:threefoldtoken.com/', title: 'ZeroChat private cloud messaging', description: 'Open source,  private cloud\nSlack-alternative, \nWorkplace messaging for web, PCs and phones.'});
+            reply(200, {type: 'article', url: 'https:threefoldtoken.com/', title: 'TF Chat private cloud messaging', description: 'Open source,  private cloud\nSlack-alternative, \nWorkplace messaging for web, PCs and phones.'});
         await Actions.getOpenGraphMetadata(url)(dispatch, getState);
 
         nock(Client4.getBaseRoute()).
